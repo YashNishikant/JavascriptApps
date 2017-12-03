@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calcstyle.css">
+</head>
+    
+<body>
+    <h1>Creator's Calculator</h1>
+    
+    <script>
+    function calcFunctionC() {
+        console.log("");   
+        var textbox1element = document.getElementById("textbox1");
+        textbox1element.value="";   
+        var textbox2element = document.getElementById("textbox2");
+        textbox2element.value="";    
+    }     
+    </script>
+    
+    <table class="ty">   
+       
+        <tr height="30">
+            <td> <input type="text" id="textbox1"></td>
+        </tr>
+        
+        <tr height="40">    
+            <td class="ty"> <input type="text" id="textbox2"></td>    
+        </tr>
+        <tr>    
+            <td class="ty">
+                <table>
+                    <tr height="70">
+                        <td> <button onclick="calcFunctionC()">C</button></td>
+                        <td> <button>1</button></td>
+                        <td> <button>2</button></td>
+                        <td> <button>3</button></td>
+                        <td> <button>4</button></td>
+                    </tr>
+                    <tr height="70">
+                        <td> <button>5</button></td>
+                        <td> <button>6</button></td>
+                        <td> <button>7</button></td>    
+                        <td> <button>8</button></td>
+                        <td> <button>9</button></td>
+                    </tr>
+                    <tr height="70">
+                        <td> <button>0</button></td>
+                        <td> <button>+</button></td>
+                        <td> <button>-</button></td>
+                        <td> <button>/</button></td>
+                        <td> <button>*</button></td>
+                    </tr>
+                </table>    
+            </td>        
+        </tr>
+        <tr height="70">    
+            <td class="ty"> <button class="enterbtn">ENTER</button></td>   
+        </tr>    
+    </table>
+</body>  
+    
+</html>
+

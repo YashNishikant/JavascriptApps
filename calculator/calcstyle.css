@@ -1,0 +1,27 @@
+table td {
+    background-color: powderblue;
+    border: 5px solid red;
+    align-content : center;
+}
+
+h1 {
+    color: lawngreen;
+}
+
+.ty {
+    background-color: lawngreen; 
+    border : 5px solid blue;
+}
+
+
+button {
+    border-radius: 12px; 
+    padding: 10px 24px;
+    background-color: #4CAF50;
+}
+
+.enterbtn {
+    padding: 20px 160px;
+    font-size: 15px;
+    background-color: #f4511e;
+}
