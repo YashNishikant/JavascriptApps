@@ -1,5 +1,6 @@
 
-        function calcFunctionC() {
+/*
+function calcFunctionC() {
             console.log("");   
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value="";   
@@ -111,8 +112,24 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "*";       
         }     
+ */
  
- 
+        function calcFunction(me) {
+            console.log("#");   
+            var textbox1element = document.getElementById("textbox1");
+            textbox1element.value= textbox1element.value + me;    
+            var textbox2element = document.getElementById("textbox2");
+            textbox2element.value= math.eval(textbox1element.value);
+        }
+
+        function calcFunctionC() {
+            console.log("");   
+            var textbox1element = document.getElementById("textbox1");
+            textbox1element.value="";   
+            var textbox2element = document.getElementById("textbox2");
+            textbox2element.value="";  
+        }
+        
         function solve() {   
             console.log("Solve is called")
             var textbox1element = document.getElementById("textbox1");
