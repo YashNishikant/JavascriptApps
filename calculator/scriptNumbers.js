@@ -5,14 +5,15 @@
             textbox1element.value="";   
             var textbox2element = document.getElementById("textbox2");
             textbox2element.value="";    
-            }   
+        }   
    
         function calcFunction1() {
             console.log("1");   
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "1";      
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "1";      
+            textbox2element.value= math.eval(textbox1element.value);      
+            
         }   
     
         function calcFunction2() {
@@ -20,7 +21,7 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "2";   
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "2";      
+            textbox2element.value= math.eval(textbox1element.value);    
         }     
     
         function calcFunction3() {
@@ -28,7 +29,7 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "3";   
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "3";    
+            textbox2element.value= math.eval(textbox1element.value);
         }     
    
         function calcFunction4() {
@@ -36,7 +37,7 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "4"; 
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "4";    
+            textbox2element.value= math.eval(textbox1element.value);    
         }     
    
         function calcFunction5() {
@@ -44,7 +45,7 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "5";    
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "5";      
+            textbox2element.value= math.eval(textbox1element.value);      
         }     
    
         function calcFunction6() {
@@ -52,7 +53,7 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "6";    
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "6";   
+            textbox2element.value= math.eval(textbox1element.value);   
         }     
     
         function calcFunction7() {
@@ -60,7 +61,7 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "7";    
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "7";     
+            textbox2element.value= math.eval(textbox1element.value);     
         }     
     
         function calcFunction8() {
@@ -68,7 +69,7 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "8";    
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "8";    
+            textbox2element.value= math.eval(textbox1element.value);    
         }     
     
         function calcFunction9() {
@@ -76,7 +77,7 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "9";    
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "9";    
+            textbox2element.value= math.eval(textbox1element.value);    
         }     
     
         function calcFunction0() {
@@ -84,39 +85,31 @@
             var textbox1element = document.getElementById("textbox1");
             textbox1element.value= textbox1element.value + "0";    
             var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "0";    
+            textbox2element.value= math.eval(textbox1element.value);    
         }     
    
         function calcFunctionAdd() {
             console.log("+");   
             var textbox1element = document.getElementById("textbox1");
-            textbox1element.value= textbox1element.value + "+";    
-            var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "+";     
+            textbox1element.value= textbox1element.value + "+";         
         }     
     
         function calcFunctionSubtract() {
             console.log("-");   
             var textbox1element = document.getElementById("textbox1");
-            textbox1element.value= textbox1element.value + "-";    
-            var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "-";    
+            textbox1element.value= textbox1element.value + "-";      
         }     
    
         function calcFunctionDivide() {
             console.log("/");   
             var textbox1element = document.getElementById("textbox1");
-            textbox1element.value= textbox1element.value + "/";    
-            var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "/";   
+            textbox1element.value= textbox1element.value + "/";     
         }     
    
         function calcFunctionMultiply() {
             console.log("*");   
             var textbox1element = document.getElementById("textbox1");
-            textbox1element.value= textbox1element.value + "*";    
-            var textbox2element = document.getElementById("textbox2");
-            textbox2element.value= textbox2element.value + "*";     
+            textbox1element.value= textbox1element.value + "*";       
         }     
  
  
