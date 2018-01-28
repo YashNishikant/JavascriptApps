@@ -3,7 +3,8 @@ var ctx = canvas.getContext('2d');
 
 var x = canvas.width/2;
 var y = canvas.height-60;
-var step = 1;
+var stepX = 1;
+var stepY = 1;
 var ballRadius = 10;
 
 
@@ -21,9 +22,19 @@ function drawBall() {
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
-    //step = step + 0.5
-    x = x- step
-    y = y- step
-      
+    
+    if (x<11)
+    {
+        stepX = -1 * stepX;
+    }
+    
+    if (y<11)
+    {
+        stepY = -1 * stepY;    
+    }
+    
+    x = x- stepX
+    y = y- stepY
+
 }
 setInterval(draw, 10);
