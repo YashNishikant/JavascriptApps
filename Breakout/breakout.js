@@ -20,25 +20,18 @@ function drawBall() {
 }
     
 function draw() {
+    
+    canvas.width=window.innerWidth-20;
+    canvas.height=window.innerHeight-20;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
     
-    if (x<11)
+    if ( (x<11) || (x>canvas.width - ballRadius) )
     {
         stepX = -1 * stepX;
     }
     
-    if (y<11)
-    {
-        stepY = -1 * stepY;    
-    }
-    
-    if (x>canvas.width - ballRadius)
-    {
-        stepX = -1 * stepX;    
-    }
-    
-    if (y>canvas.height - ballRadius)
+    if ( (y<11) || (y>canvas.height - ballRadius) )
     {
         stepY = -1 * stepY;    
     }
