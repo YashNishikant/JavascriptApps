@@ -33,6 +33,16 @@ function draw() {
         stepY = -1 * stepY;    
     }
     
+    if (x>canvas.width - ballRadius)
+    {
+        stepX = -1 * stepX;    
+    }
+    
+    if (y>canvas.height - ballRadius)
+    {
+        stepY = -1 * stepY;    
+    }
+    
     x = x- stepX
     y = y- stepY
 
