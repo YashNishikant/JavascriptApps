@@ -7,6 +7,9 @@ var stepX = 1;
 var stepY = 1;
 var ballRadius = 10;
 var anycolor = randomColor();
+var paddleHeight = 10;
+var paddleWidth = 75;
+var paddleX = (canvas.width-paddleWidth)/2;
 
 function drawBall() {
    
@@ -15,26 +18,36 @@ function drawBall() {
     ctx.fillStyle = anycolor;
     ctx.fill();
     ctx.stroke();
-    ctx.closePath();
-    
+    ctx.closePath();    
 }
     
+function drawPaddle() {
+    ctx.beginPath();
+    ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+    ctx.fillStyle = "#FF0000";
+    ctx.fill();    
+    ctx.closePath();    
+}
+
+
 function draw() {
     canvas.width=window.innerWidth-20;
     canvas.height=window.innerHeight-20;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
+    drawPaddle();
     
     if ( (x<ballRadius) || (x>canvas.width - ballRadius) )
     {
         stepX = -1 * stepX; 
-        randomColor();
+        anycolor = randomColor();
     }
     
     if ( (y<ballRadius) || (y>canvas.height - ballRadius) )
     {
         stepY = -1 * stepY;  
-        randomColor();
+        anycolor = randomColor();
+        
     }
     
     x = x- stepX
@@ -45,4 +58,7 @@ function draw() {
     
     
 }
-setInterval(draw, 10);
+
+setInterval(draw, 1);
+
+
